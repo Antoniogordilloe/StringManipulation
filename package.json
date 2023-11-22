@@ -1,0 +1,10 @@
+{
+  "name": "StringManipulation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "p": "node index.js"
+  },
+  "license": "MIT"
+}
