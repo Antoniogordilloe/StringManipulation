@@ -1,8 +1,7 @@
 
- import { months, cities } from './data.js';
-  
+ import { months, countriesArray } from './data.js';
 
-
+ var cities = countriesArray["Spain"];
 
  var parameter = process.argv.slice(2).join(' ');
 
@@ -76,7 +75,7 @@
   function determineCity(parameter) {
     for (var i = 0; i < cities.length; i++) {
       var city = cities[i];
-      var result = matchMost(parameter, city, 4);
+      var result = matchMost(parameter, city, 5);
       if (result) {
         console.log("City found");
         return result;
@@ -88,6 +87,7 @@
   }
   
   function matchMost(find, string, accuracy) {
+    
     for (var i = 0; i < find.length; i++) {
       for (var j = find.length; j > i; j--) {
         var substring = find.substring(i, j);
@@ -99,4 +99,6 @@
   
     return null;
   }
+
+ 
   
