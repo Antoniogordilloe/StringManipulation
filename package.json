@@ -4,7 +4,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "p": "node index.js"
+    "p": "node index.js",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "standard": "^17.1.0"
+  }
 }
